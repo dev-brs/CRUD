@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de consulta do BD</title>
+</head>
+<body>
+    <h1>Lista de Alunos</h1>
+    <hr>
+    <table border="1">
+        <tr>
+            <td>ID</td>
+            <td>Matricula</td>
+            <td>Nome</td>
+            <td>Atualizar</td>
+            <td>Excluir</td>
+        </tr>
+        {% for aluno in alunos%}
+        <tr>
+            <td>{{aluno.id_aluno}}</td>
+            <td>{{aluno.matricula}}</td>
+            <td>{{aluno.nome}}</td>
+            <td><a href ="/atualizar/{{aluno.id_aluno}}">X</a></td>
+            <td><a href="/deletar/{{aluno.id_aluno}}">X</a></td>
+        </tr>
+        {% endfor %}
+    </table><br>
+    <a href = "/voltar">Voltar</a>
+
+</body>
+</html>
