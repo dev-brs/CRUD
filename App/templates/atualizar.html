@@ -7,16 +7,20 @@
 </head>
 <body>
     <div>
-        <h1>Cadastro de Alunos</h1>
-        <hr>
-        <form action="" method="POST">
-            <table>
-                <tr>
-                    <td>Nome</td>
-                    <td> <input type="text" name="nome" value="{{aluno.nome}}"></td>
-                </tr>
-            </table><br>
-            <input type="submit" value="Atualizar">
+        <h1>ATUALIZAR DADOS</h1>
+        <form action="{{ url_for('atualizar', id=aluno.id_aluno) }}" method="POST">
+            <label for="nome">NOME </label>
+            <input type="text" name="nome" id="nome" value="{{ aluno.nome }}" class="estilo-caixa-de-texto">
+            <br>
+            <div class="botao">
+                <button type="submit">ATUALIZAR</button>
+            </div>
+        </form>
+
+        <form action="{{ url_for('consulta') }}" method="get">
+            <div class="botao">
+                <button type="submit">CONSULTA DE ALUNOS</button>
+            </div>
         </form>
     </div>
 </body>

@@ -8,7 +8,12 @@ h1{
     color: #d6d6d6;
     margin-top: 17.5%;    
 }
-
+label{
+    color:#d6d6d6;
+    font-family: monospace;
+    font-size: 2vw;
+    font-weight: bold;
+}
 button{
     font-weight: bold;
     cursor: pointer;
