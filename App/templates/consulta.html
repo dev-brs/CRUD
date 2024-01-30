@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Página de consulta do BD</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Lista de Alunos</h1>
+    <h1 id="h1-tabela">LISTA DE ALUNOS</h1>
     <hr>
-    <table border="1">
-        <tr>
+    <table>
+        <tr id="legenda-tabela">
             <td>ID</td>
-            <td>Matricula</td>
-            <td>Nome</td>
-            <td>Atualizar</td>
-            <td>Excluir</td>
+            <td>MATRÍCULA</td>
+            <td>NOME</td>
+            <td>ATUALIZAR</td>
+            <td>EXCLUIR</td>
         </tr>
         {% for aluno in alunos%}
-        <tr>
+        <tr id="info-tabela">
             <td>{{aluno.id_aluno}}</td>
             <td>{{aluno.matricula}}</td>
             <td>{{aluno.nome}}</td>
@@ -25,7 +26,10 @@
         </tr>
         {% endfor %}
     </table><br>
-    <a href = "/voltar">Voltar</a>
-
+    <form action="{{ url_for('voltar') }}" method="get">
+        <div class="botao">
+            <button type="submit">VOLTAR</button>
+        </div>    
+    </form>
 </body>
 </html>

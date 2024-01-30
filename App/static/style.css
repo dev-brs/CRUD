@@ -1,0 +1,118 @@
+body{
+    background-color: rgb(46, 46, 46);
+}
+
+h1{
+    font-weight: bold;
+    font-family: monospace;
+    margin-top: 35%;
+    color: #d6d6d6;
+}
+
+button{
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #FF6188;
+    color: #d6d6d6;
+    padding: 10px 20px;
+    width: 170px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: monospace;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: #a1384b;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td{
+    border: 2px solid #FF6188;    
+}
+
+th, td{
+    padding: 10px;
+    text-align: left;
+}
+
+a{
+    color: #FF6188;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+a:hover{
+    color: #a1384b;
+}
+
+.botao{
+    margin: 10px;
+}
+
+.estilo-caixa-de-texto{
+    color: #d6d6d6;
+    padding: 10px 20px;
+    width: 230px;
+    font-family: monospace;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+}
+
+.estilo-botao{
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #FF6188;
+    color: #d6d6d6;
+    padding: 10px 20px;
+    width: 170px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: monospace;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.estilo-botao:hover{
+    background-color: #FF4D6D; /* Cor alterada para o efeito de hover */
+}
+
+#legenda-tabela{
+    font-family: monospace;
+    font-size: 2vw;
+    color:#d6d6d6;
+    font-weight: bold;
+}
+
+#info-tabela{
+    font-family: monospace;
+    font-size: 2vw;
+}
+
+#h1-tabela{
+    margin-top: 0;
+}
+
+#homepage{
+    text-align: center;
+}
+
+#cadastro{
+    text-align: center;
+}

@@ -2,14 +2,22 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Página Inicial</title>
+    <title>Homepage</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <div>
-        <h1>Cadastro de Alunos</h1>
-        <hr>
-        <a href="{{ url_for('cadastrar') }}">Cadastrar Aluno</a><br>
-        <a href="{{url_for('consulta')}}">Consulta de Alunos</a><br>
+    <div id="homepage">
+        <h1>CADASTRO DE ALUNOS</h1>
+        <form action="{{ url_for('cadastrar') }}" method="get">
+            <div class="botao">
+                <button type="submit">CADASTRAR ALUNO</button>
+            </div>
+        </form>
+        <form action="{{ url_for('consulta') }}" method="get">
+            <div class="botao">
+                <button type="submit">CONSULTA DE ALUNOS</button>
+            </div>
+        </form>
     </div>
 </body>
 </html>

@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Página de Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <div>
-        <h1>Cadastro de Alunos</h1>
-        <hr>
+    <div id="cadastro">
+        <h1>CADASTRO DE ALUNOS</h1>
         <form action="{{ url_for('cadastro') }}" method="POST">
-            <table>
-                <tr>
-                    <td>Nome</td>
-                    <td> <input type="text" name="nome"></td>
-                </tr>
-            </table><br>
-            <input type="submit" value="Cadastrar">
+            <div class="caixa-de-texto">
+                <input type="text" name="nome" placeholder="NOME" class="estilo-caixa-de-texto">
+            </div>
+            <div class="botao">
+                <input type="submit" value="Cadastrar"  class="estilo-botao">
+            </div>
         </form>
     </div>
 </body>
